@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>MFFKDeviceManagerDelegate Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">MFLink </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">MoreFun</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/deviceManager:didConnectToFlintApplication:launchedApplication:">- deviceManager:didConnectToFlintApplication:launchedApplication:</option>
+		
+		<option value="//api/name/deviceManager:didDisconnectFromApplicationWithError:">- deviceManager:didDisconnectFromApplicationWithError:</option>
+		
+		<option value="//api/name/deviceManager:didDisconnectWithError:">- deviceManager:didDisconnectWithError:</option>
+		
+		<option value="//api/name/deviceManager:didFailToConnectToApplicationWithError:">- deviceManager:didFailToConnectToApplicationWithError:</option>
+		
+		<option value="//api/name/deviceManager:didFailToConnectWithError:">- deviceManager:didFailToConnectWithError:</option>
+		
+		<option value="//api/name/deviceManager:didFailToStopApplicationWithError:">- deviceManager:didFailToStopApplicationWithError:</option>
+		
+		<option value="//api/name/deviceManager:volumeDidChangeToLevel:isMuted:">- deviceManager:volumeDidChangeToLevel:isMuted:</option>
+		
+		<option value="//api/name/deviceManagerDidConnect:">- deviceManagerDidConnect:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">MFFKDeviceManagerDelegate Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>MFFKDeviceManager.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The delegate for <a href="../Classes/MFFKDeviceManager.html">MFFKDeviceManager</a> notifications.</p>
+
+<p>@ingroup DeviceControl</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/deviceManagerDidConnect:" title="deviceManagerDidConnect:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deviceManagerDidConnect:">&ndash;&nbsp;deviceManagerDidConnect:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when a connection has been established to the device.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)deviceManagerDidConnect:(MFFKDeviceManager *)<em>deviceManager</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceManager</code></th>
+						<td><p>The device manager.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Called when a connection has been established to the device.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MFFKDeviceManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deviceManager:didFailToConnectWithError:" title="deviceManager:didFailToConnectWithError:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deviceManager:didFailToConnectWithError:">&ndash;&nbsp;deviceManager:didFailToConnectWithError:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when the connection to the device has failed.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)deviceManager:(MFFKDeviceManager *)<em>deviceManager</em> didFailToConnectWithError:(NSError *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceManager</code></th>
+						<td><p>The device manager.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>The error that caused the connection to fail.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Called when the connection to the device has failed.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MFFKDeviceManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deviceManager:didDisconnectWithError:" title="deviceManager:didDisconnectWithError:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deviceManager:didDisconnectWithError:">&ndash;&nbsp;deviceManager:didDisconnectWithError:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when the connection to the device has been terminated.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)deviceManager:(MFFKDeviceManager *)<em>deviceManager</em> didDisconnectWithError:(NSError *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceManager</code></th>
+						<td><p>The device manager.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>The error that caused the disconnection; nil if there was no error (e.g. intentional
+disconnection).</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Called when the connection to the device has been terminated.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MFFKDeviceManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deviceManager:didConnectToFlintApplication:launchedApplication:" title="deviceManager:didConnectToFlintApplication:launchedApplication:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deviceManager:didConnectToFlintApplication:launchedApplication:">&ndash;&nbsp;deviceManager:didConnectToFlintApplication:launchedApplication:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when an application has been launched or joined.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)deviceManager:(MFFKDeviceManager *)<em>deviceManager</em> didConnectToFlintApplication:(MFFKApplicationMetadata *)<em>applicationMetadata</em> launchedApplication:(BOOL)<em>launchedApplication</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>applicationMetadata</code></th>
+						<td><p>Metadata about the application.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>launchedApplication</code></th>
+						<td><p>YES if the application was launched as part of the connection, or NO
+if the application was already running and was joined.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Called when an application has been launched or joined.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MFFKDeviceManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deviceManager:didFailToConnectToApplicationWithError:" title="deviceManager:didFailToConnectToApplicationWithError:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deviceManager:didFailToConnectToApplicationWithError:">&ndash;&nbsp;deviceManager:didFailToConnectToApplicationWithError:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when connecting to an application fails.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)deviceManager:(MFFKDeviceManager *)<em>deviceManager</em> didFailToConnectToApplicationWithError:(NSError *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceManager</code></th>
+						<td><p>The device manager.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>The error that caused the failure.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Called when connecting to an application fails.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MFFKDeviceManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deviceManager:didDisconnectFromApplicationWithError:" title="deviceManager:didDisconnectFromApplicationWithError:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deviceManager:didDisconnectFromApplicationWithError:">&ndash;&nbsp;deviceManager:didDisconnectFromApplicationWithError:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when disconnected from the current application.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)deviceManager:(MFFKDeviceManager *)<em>deviceManager</em> didDisconnectFromApplicationWithError:(NSError *)<em>error</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Called when disconnected from the current application.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MFFKDeviceManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deviceManager:didFailToStopApplicationWithError:" title="deviceManager:didFailToStopApplicationWithError:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deviceManager:didFailToStopApplicationWithError:">&ndash;&nbsp;deviceManager:didFailToStopApplicationWithError:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called when a stop application request fails.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)deviceManager:(MFFKDeviceManager *)<em>deviceManager</em> didFailToStopApplicationWithError:(NSError *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceManager</code></th>
+						<td><p>The device manager.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>The error that caused the failure.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Called when a stop application request fails.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MFFKDeviceManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deviceManager:volumeDidChangeToLevel:isMuted:" title="deviceManager:volumeDidChangeToLevel:isMuted:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deviceManager:volumeDidChangeToLevel:isMuted:">&ndash;&nbsp;deviceManager:volumeDidChangeToLevel:isMuted:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Called whenever the volume changes.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)deviceManager:(MFFKDeviceManager *)<em>deviceManager</em> volumeDidChangeToLevel:(float)<em>volumeLevel</em> isMuted:(BOOL)<em>isMuted</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>volumeLevel</code></th>
+						<td><p>The current device volume level.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isMuted</code></th>
+						<td><p>The current device mute state.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Called whenever the volume changes.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MFFKDeviceManager.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2015 MoreFun. All rights reserved. Updated: 2015-06-02</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
